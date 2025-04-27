@@ -1,0 +1,41 @@
+body {
+	font-size: 20px;
+	margin: 50px;
+	border: 1px solid #ccc;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 1.5;
+	font-family: "Times New Roman", Times, serif;
+}
+
+body > * {
+	max-width: 600px;
+}
+
+main {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.title {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+}
+
+.title h2 {
+	color: #006eb6;
+	font-size: 17.5px;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+}
+
+.list li {
+	margin-bottom: 15px;
+}
+
+.byui-logo {
+	width: 150px;
+}
