@@ -22,10 +22,14 @@ function closeViewer() {
 }
 
 gallery.addEventListener("click", (e) => {
+	// Had to do it this way because my Github user name is "anson-eyre" (notice the dash) and so the URL got messed up
+	const src = e.target.src.split("-")
+	src.pop()
+
 	document.body.insertAdjacentHTML(
 		"afterbegin",
 		`<div class="viewer">
-            <img src="${e.target.src.split("-")[0]}-full.jpeg" alt="picture" />
+            <img src="${src.join("-")}-full.jpeg" alt="${e.target.alt}">
             <button class="close-viewer">X</button> 
         </div>`
 	)
