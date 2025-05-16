@@ -8,9 +8,9 @@ menuBtn.addEventListener("click", () => {
 
 function onResize() {
 	if (window.innerWidth < 1000) {
-		menu.classList.remove("hide")
-	} else {
 		menu.classList.add("hide")
+	} else {
+		menu.classList.remove("hide")
 	}
 }
 
