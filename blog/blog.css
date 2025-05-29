@@ -28,7 +28,7 @@ nav > ul {
 	font: 1.25rem var(--secondary-font);
 	justify-items: end;
 	justify-content: end;
-	margin: 20px;
+	margin: 20px auto;
 	max-width: 1000px;
 }
 

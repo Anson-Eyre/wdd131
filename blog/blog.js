@@ -21,4 +21,40 @@ const articles = [
 		genre: "Fantasy",
 		stars: "⭐⭐⭐⭐",
 	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description: "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc: "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐",
+	},
 ]
+
+const books = document.getElementById("books")
+
+function createBook(article) {
+	const { id, title, date, description, imgSrc, imgAlt, ages, genre, stars } = article
+	return `
+	<article class="book">
+		<div class="info">
+			<h2>${title}</h2>
+			<div class="cover">
+				<img src="${imgSrc}" alt="${imgAlt}" />
+			</div>
+			<p>${description} <a href="#">Read More...</a></p>
+		</div>
+		<div class="details">
+			<h3>${date}</h3>
+			<p>${ages}</p>
+			<p>${genre}</p>
+			<div>${stars}</div>
+		</div>
+	</article>
+	`
+}
+
+books.innerHTML = articles.map(createBook).join("")
