@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lora:ital,wght@0,400..700;1,400..700&family=Mooli&display=swap");
+
+:root {
+	--primary-color: #1b98e0;
+	--secondary-color: #59c3c3;
+	--text-dark: #333;
+	--text-light: #ebebeb;
+	--primary-font: Arial, Helvetica, sans-serif;
+	--secondary-font: "Indie Flower";
+}
+
+body {
+	font-family: var(--primary-font);
+}
+
+h1,
+h2 {
+	font-family: var(--secondary-font), Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--primary-color);
+}
+img {
+	max-width: 100%;
+}
+
+header {
+	border-bottom: 2px solid gray;
+	margin-bottom: 20px;
+}
+
+main,
+.search {
+	padding: 0 20px;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	margin: 10px 0 20px;
+}
+.search input {
+	border: 1px solid black;
+	border-radius: 7px 0px 0px 7px;
+	font-size: 1.2em;
+	width: 100%;
+}
+.search button {
+	background-color: unset;
+	border: 1px solid black;
+	border-radius: 0px 7px 7px 0px;
+	padding: 0;
+}
+.search img {
+	width: 35px;
+	padding: 2px 5px;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+	gap: 0.5em;
+}
+
+.title img {
+	width: 90px;
+}
+
+.recipe {
+	border: 1px solid black;
+	border-radius: 7px;
+	padding: 20px 20px 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	font-size: 1.25em;
+	margin: 5px 0;
+}
+
+.recipe h2 {
+	margin-bottom: 0;
+}
+
+.tags > div {
+	border: 1px solid black;
+	padding: 5px 7.5px;
+}
+
+.description {
+	display: none;
+	margin-top: 10px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px 0 10px;
+	padding: 0 20px;
+}
+
+.social {
+	display: flex;
+	gap: 5px;
+	margin: 0 0 7px;
+}
+
+.social img {
+	width: 60px;
+}
+
+.attribution {
+	/* Lighthouse says that the attribution text size is too small and not readable. But I'm leaving it because the instructions specifically say to use it */
+	font-size: 0.6em;
+	/* I had to change the color to black because Lighthouse said there wasn't enough contrast */
+	/* color: var(--primary-color); */
+	color: black;
+	text-decoration: none;
+}
+
+@media (min-width: 600px) {
+	.recipe {
+		flex-direction: row;
+		padding: 20px;
+	}
+	.recipe img {
+		max-width: 250px;
+	}
+	.recipe > div {
+		margin-left: 20px;
+	}
+	.tags {
+		margin-top: 0;
+	}
+	.description {
+		display: block;
+	}
+	footer {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 960px) {
+	main,
+	footer,
+	.search {
+		max-width: 920px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.recipe img {
+		max-width: 350px;
+	}
+}
