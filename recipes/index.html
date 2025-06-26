@@ -14,7 +14,7 @@
 		<link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
 		<title>Recipe Book</title>
 		<link rel="stylesheet" href="recipes.css" />
-		<script src="main.js" defer></script>
+		<script src="main.js" type="module" defer></script>
 	</head>
 	<body>
 		<header>
@@ -22,31 +22,13 @@
 				<img src="./images/recipe-book.png" alt="recipe book" />
 				<h1>RecipeBook</h1>
 			</div>
-			<form action="" class="search">
+			<form class="search">
 				<input type="text" placeholder="Find a recipe" />
 				<button><img src="./images/search.svg" alt="search" /></button>
 			</form>
 		</header>
 		<main>
-			<section class="recipe">
-				<img src="./images/sweet-potato-waffle-md.jpg" alt="Sweet Potato Waffles" />
-				<div>
-					<div class="tags">
-						<div>Waffles</div>
-						<div>Sweet Potato</div>
-						<div>Side</div>
-					</div>
-					<h2>Sweet Potato Waffles</h2>
-					<div class="rating">
-						<span aria-hidden="true" class="icon-star">⭐</span>
-						<span aria-hidden="true" class="icon-star">⭐</span>
-						<span aria-hidden="true" class="icon-star">⭐</span>
-						<span aria-hidden="true" class="icon-star">⭐</span>
-						<span aria-hidden="true" class="icon-star-empty">☆</span>
-					</div>
-					<p class="description">Savory waffles made with Sweet potato with a hint of Ginger</p>
-				</div>
-			</section>
+			<div class="recipes"></div>
 		</main>
 		<footer>
 			<div class="social">
