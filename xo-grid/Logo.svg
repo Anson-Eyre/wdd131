@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:export>
+      <bx:file format="svg"/>
+    </bx:export>
+  </defs>
+  <path style="fill: rgb(216, 216, 216); stroke-width: 50px; stroke-linecap: round; stroke: rgb(178, 68, 117); transform-origin: 250px 242.862px 0px;" d="M 49.999 435.723 L 450 50.001" transform="matrix(-1, 0, 0, -1, 0, 0)"/>
+  <ellipse style="stroke: rgb(52, 163, 186); stroke-width: 50px; fill: none;" cx="250" cy="250" rx="200" ry="200"/>
+  <path style="fill: rgb(216, 216, 216); stroke-width: 50px; stroke-linecap: round; stroke: rgb(178, 68, 117);" d="M 50 50 L 450 450"/>
+</svg>

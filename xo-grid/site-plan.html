@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>XO Grid Site Plan</h1>
+			<h2>Anson Eyre</h2>
+			<h2>WDD 131-A2</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			<!-- ------------------------Steps 2-3------------------------------ -->
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>The purpose of this website is to provide a simple, interactive Tic-Tac-Toe game that demonstrates core web development skills including HTML layout, CSS styling, and JavaScript interactivity. It allows users to play against another person on the same device.</p>
+
+			<h3>Audience</h3>
+			<p>The primary audience is casual users, students, or friends who want to play a quick game. It's also designed for instructors or classmates reviewing the project as part of WDD 131, showcasing web development proficiency.</p>
+
+			<h3>Dynamic elements</h3>
+			<p>JavaScript will be used to add interactivity and game logic, including detecting player turns, checking for win or draw conditions, displaying game results, and allowing users to reset the game. The script will also dynamically update the game board as players click on the cells, providing immediate feedback without page reloads.</p>
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="Logo.svg" alt="Logo image" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<!-- ------------------------Steps 4-8------------------------------ -->
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a href="https://coolors.co/34a3ba-b24475-141414-ebebeb-bfb6bb" target="_blank">https://coolors.co/34a3ba-b24475-141414-ebebeb-bfb6bb</a>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>background</th>
+						<th>heading</th>
+						<th>paragraph</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#34a3ba]</td>
+						<td class="secondary">[#b24475]</td>
+						<td class="background">[#141414]</td>
+						<td class="heading">[#ebebeb]</td>
+						<td class="paragraph">[#bfb6bb]</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- ------------------------Step 9------------------------------ -->
+
+			<h3>Typography</h3>
+			<!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+			<h4>Font: Outfit</h4>
+			<h3>paragraph example</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<!-- ------------------------Step 10------------------------------ -->
+
+			<h3>Navigation</h3>
+			<!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Page2</a>
+				<a href="#">Page3</a>
+			</nav>
+			<hr />
+
+			<h2>Content</h2>
+			<h3>Home page</h3>
+			<p>A classic game of strategy and luck. Tic-Tac-Toe is the ultimate battle between X and O. Play solo or with a friend — simple, fast, and fun.</p>
+			<button>Play Now</button>
+			<h3>Game Page</h3>
+			<p>Click on a square to place your mark. First to get three in a row wins!</p>
+			<img src="O.svg" alt="O" />
+			<img src="X.svg" alt="X" />
+			<button>Reset</button>
+			<h4>Other Elements</h4>
+			<ul>
+				<li>3x3 game board (HTML/CSS grid)</li>
+				<li>Current player indicator</li>
+				<li>Win/draw message display</li>
+			</ul>
+			<h4>Data</h4>
+			<pre>
+const board = [
+    ['', '', ''],
+    ['', '', ''],
+    ['', '', '']
+];
+let currentPlayer = 'X';
+            </pre
+			>
+
+			<h2>Wireframes</h2>
+			<p>Create two wireframes for your site. One for each page and list them here</p>
+
+			<h3>Home</h3>
+			<img src="Home_wire.png" alt="home page wireframe" />
+
+			<h3>Game</h3>
+			<p>The game board is not exact, i had to eye ball it</p>
+			<img src="Game_wire.png" alt="page 2 wireframe" />
+		</main>
+	</body>
+</html>
