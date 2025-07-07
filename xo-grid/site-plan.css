@@ -45,7 +45,7 @@ h2 {
 hr {
 	height: 3px;
 	margin: 35px 0;
-	background: var(--accent1-color);
+	background: var(--primary-color);
 }
 header {
 	padding: 1em;
@@ -79,10 +79,10 @@ p {
 	background-color: var(--background-color);
 }
 .heading {
-	background-color: var(--heading-color);
+	color: var(--heading-color);
 }
 .paragraph {
-	background-color: var(--paragraph-color);
+	color: var(--paragraph-color);
 }
 
 nav {
@@ -100,6 +100,7 @@ nav a {
 	min-width: 120px;
 	text-decoration: none;
 	padding: 10px;
+	transition: 0.2s;
 }
 nav a:link,
 nav a:visited {
