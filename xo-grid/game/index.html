@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Anson Eyre - XO Grid - Game" />
+		<meta name="author" content="Anson Eyre" />
+		<title>XO Grid</title>
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<p>Click on a square to place your mark. First to get three in a row wins!</p>
+		<div class="game">
+			<svg id="svg"></svg>
+			<div id="board"></div>
+		</div>
+		<div id="status">Current Turn: null</div>
+		<button onclick="startGame()">Reset</button>
+	</body>
+</html>
