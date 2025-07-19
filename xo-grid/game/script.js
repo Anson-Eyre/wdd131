@@ -83,13 +83,12 @@ function onLeave(e) {
 }
 
 function checkWin(player) {
-	for (const combo of winningCombos) {
-		const [a, b, c, line] = combo
-		if (cells[a].dataset.fill === player && cells[b].dataset.fill === player && cells[c].dataset.fill === player) {
-			svg.style.zIndex = 10
-			svg.innerHTML = `<line ${line} stroke="var(--${player === "X" ? "secondary" : "primary"}-color)" stroke-width="10" stroke-linecap="round" />`
-			return true
-		}
+	const winningCombo = winningCombos.find(([a, b, c]) => cells[a].dataset.fill === player && cells[b].dataset.fill === player && cells[c].dataset.fill === player)
+	if (winningCombo) {
+		const [a, b, c, line] = winningCombo
+		svg.style.zIndex = 10
+		svg.innerHTML = `<line ${line} stroke="var(--${player === "X" ? "secondary" : "primary"}-color)" stroke-width="10" stroke-linecap="round" />`
+		return true
 	}
 	return false
 }
